@@ -4,6 +4,9 @@ This repo contains our basics for python. The course will cover the following:
 
 1) SETUP
 2) Datatypes
+    - How to define/syntax
+    - How to access/how is organized
+    - How to add to a list or a dictionary
     1) Strings
     2) Integer
     3) Float
