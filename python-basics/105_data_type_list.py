@@ -62,3 +62,16 @@ hybrid_list = ['this is a string', 12, 66, 'hello', [1,2,3], [1,2,2]]
 my_tuple = (2, 'hello', 22, 'more value')
 print(my_tuple)
 print(type(my_tuple))
+
+# Range slicing
+print(crazy_x_partner)
+print(crazy_x_partner[:1]) # 0 to 1, not inclusive of 1
+print(crazy_x_partner[1:2]) # from 1 to 2, not inclusive of 2
+
+# Jumping/slicing
+# syntax [N::M]
+# N is where it starts
+# M is every record it prints
+example_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(example_list[::3])
+print(example_list[1::3])
