@@ -15,13 +15,19 @@
 
 player_input = ''
 
-while player_input != 'exit':
-    player_input = int(input('Welcome to POP AND TOC! A game for all ages! Input a number please: '))
-    if player_input%3 == 0 and player_input%5 == 0:
-        print('POPTOC')
-    elif int(player_input)%3 == 0:
-        print('POP')
-    elif int(player_input)%5 == 0:
-        print('TOC')
-    else:
-        'Not a valid number! Please try again: '
+
+while player_input != -1:
+    counter = 0
+    player_input = int(input('Welcome to POP AND TOC! A game for all ages! Input a number please, or -1 to exit: '))
+    while counter < player_input:
+        counter += 1
+        if counter%3 == 0 and counter%5 == 0:
+            print('POPTOC')
+        elif int(counter)%3 == 0:
+            print('POP')
+        elif int(counter)%5 == 0:
+            print('TOC')
+        else:
+            print(counter)
+else:
+    print('Bye!')

@@ -12,11 +12,14 @@
 
 student_answer = ''
 
-while student_answer != "I'm a doctor":
-    student_answer = input('What do you want? ')
+while True:
+    student_answer = input('What do you want? ').lower()
     if '?' in student_answer:
         print('HAHAHA! AHAHAHAHHA!! OMG! WHAT a silly question! Go back TO SCHOOL!')
     elif '!' in student_answer:
         print('YES! YESS! I WANT YOU TO BE MOTIVATED!! YES!')
+    elif "i'm a doctor" in student_answer:
+        print('WELL DONE! YOU can now talk to me!')
+        break
     else:
         print('Go back to school!')

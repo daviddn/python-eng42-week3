@@ -42,9 +42,21 @@ book3_dict['beg'] = input('Write out a sentence for the beginning of you story! 
 book3_dict['mid'] = input('Write out a sentence for the middle of you story! ').capitalize()
 book3_dict['end'] = input('Write out a sentence for the end of you story! ').capitalize()
 
-print(f"Great! So the mighty hero of your story is the legendary {book1_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book1_dict['beg']}. {book1_dict['mid']}. {book1_dict['end']}. The end(?)")
+# print(f"Great! So the mighty hero of your story is the legendary {book1_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book1_dict['beg']}. {book1_dict['mid']}. {book1_dict['end']}. The end(?)")
+#
+# print(f"Great! So the mighty hero of your story is the legendary {book2_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book2_dict['beg']}. {book2_dict['mid']}. {book2_dict['end']}. The end(?)")
+#
+# print(f"Great! So the mighty hero of your story is the legendary {book3_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book3_dict['beg']}. {book3_dict['mid']}. {book3_dict['end']}. The end(?)")
 
-print(f"Great! So the mighty hero of your story is the legendary {book2_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book2_dict['beg']}. {book2_dict['mid']}. {book2_dict['end']}. The end(?)")
+start_input = ''
 
-print(f"Great! So the mighty hero of your story is the legendary {book3_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book3_dict['beg']}. {book3_dict['mid']}. {book3_dict['end']}. The end(?)")
-
+while start_input != 'exit':
+    start_input = input('Please give a number between 1 and 3 to start reading a story, or write exit to leave: ').lower()
+    if start_input == '1':
+        print(f"Great! So the mighty hero of your story is the legendary {book1_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book1_dict['beg']}. {book1_dict['mid']}. {book1_dict['end']}. The end(?)")
+    elif start_input == '2':
+        print(f"Great! So the mighty hero of your story is the legendary {book2_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book2_dict['beg']}. {book2_dict['mid']}. {book2_dict['end']}. The end(?)")
+    elif start_input == '3':
+        print(f"Great! So the mighty hero of your story is the legendary {book3_dict['hero']}! He is faced by his worst enemy, Buttercup, the most evil entity in the universe. The adventure takes place in the popular tourist location of Lisboa. {book3_dict['beg']}. {book3_dict['mid']}. {book3_dict['end']}. The end(?)")
+    else:
+        print('Input not recognized.')
